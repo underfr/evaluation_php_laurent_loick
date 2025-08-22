@@ -20,7 +20,7 @@
                     $user = $_SESSION["id"];
                     addBook($title,$description,$author,$idCategory,$user);
                     $message = "Le livre a bien été rajouté";
-                    header("Refresh:2 url=/evalution_php_laurent_loick/addBook.php");
+                    header("Refresh:2 url=/evaluation_php_laurent_loick//addBook.php");
                 } else {
                     $message = "Veuillez selectionner une catégorie";
                 }
@@ -87,6 +87,6 @@
 </html>
 <?php
 else :
-header("Location: /evalution_php_laurent_loick");
+header("Location: /evaluation_php_laurent_loick/");
 endif;
 ?>

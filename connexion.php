@@ -15,18 +15,18 @@ if(isset($_POST["submit"])){
                 $_SESSION["connected"] = true;
                 $_SESSION["email"] = $email;
                 $_SESSION["id"] = $userConnected["idUser"];
-                header('Location: /evalution_php_laurent_loick/');
+                header('Location: /evaluation_php_laurent_loick//');
             } else {
                 $message = "Les informations de connexion ne sont pas correctes";
-                header("Refresh:2; url=/evalution_php_laurent_loick/connexion.php");
+                header("Refresh:2; url=/evaluation_php_laurent_loick//connexion.php");
             }
         } else {
                 $message = "Les informations de connexion ne sont pas correctes";
-                header("Refresh:2; url=/evalution_php_laurent_loick/connexion.php");
+                header("Refresh:2; url=/evaluation_php_laurent_loick//connexion.php");
         }
     } else {
         $message = "Veuillez remplir tout les champs";
-        header("Refresh:2; url=/evalution_php_laurent_loick/connexion.php");
+        header("Refresh:2; url=/evaluation_php_laurent_loick//connexion.php");
     }
 }
 
@@ -75,6 +75,6 @@ if (isset($_SESSION["connected"])==false) :
 </html>
 <?php
 else :
-header("Location: /evalution_php_laurent_loick");
+header("Location: /evaluation_php_laurent_loick//");
 endif;
 ?>

@@ -15,7 +15,7 @@ if(isset($_POST["submit"])){
             $password = hashPassword($password);
             saveUser($firstname,$lastname,$email,$password);
             $message = "Inscription réussi";
-            header("Refresh: 2; url=/evalution_php_laurent_loick/connexion.php");
+            header("Refresh: 2; url=/evaluation_php_laurent_loick//connexion.php");
         } else {
             $message = "Le compte existe déjà";
         }
@@ -70,6 +70,6 @@ if (isset($_SESSION["connected"])==false) :
 </html>
 <?php
 else :
-header("Location: /evalution_php_laurent_loick");
+header("Location: /evaluation_php_laurent_loick/");
 endif;
 ?>
